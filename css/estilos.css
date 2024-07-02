@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+
+h3{
+    color: rgb(243, 243, 247);
+    text-align: center;
+    height: 70px;
+    font-size: 70px;
+    font-weight: 700;
+    margin-top: 40px;
+
+    animation-name: animaciontitulo;
+    animation-duration:2s ;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+@keyframes animaciontitulo{
+    from{transform: scale(1);
+        color: blue;
+    }
+    to{transform: scale(1.05);
+        color: blueviolet;
+    }
+}
+
+
+h2{
+    color: blueviolet;
+    text-align: center;
+    margin-top: 40px;
+    height: 70px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+h3{
+    justify-content: center;
+    text-align: center;
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: rgb(31, 50, 226);
+}
+
+main{
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(211, 94, 207);
+    padding: 3px 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    display: block;
+    text-align: center; 
+    width: 140px;
+    height: 30px;
+    margin: auto;
+
+    transition-property: transform, font-weight;
+    transition-duration: 0.5s;
+}
+
+header a:hover{
+    transform: scale(1.06);
+    font-weight: 400;
+}
+
+div{
+    width: 30%;
+    border-radius: 10px;
+
+    transition-property: transform,;
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+
+video{
+    margin: 30px auto;
+    display: flex;
+}
+
+img,video{
+    width:100% ;
+   margin-bottom: 30px;
+}
+
+div:hover{
+    transform: scale(1.04);
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+}
